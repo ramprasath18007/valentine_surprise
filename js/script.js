@@ -32,7 +32,7 @@ setInterval(createHeart, 300);
 /* No Button Dodge */
 noBtn.addEventListener("mouseover", () => {
 
-    if (noCount < 4) {
+    if (noCount <= 1) {
 
         const maxX = window.innerWidth - noBtn.offsetWidth;
         const maxY = window.innerHeight - noBtn.offsetHeight;
@@ -65,7 +65,7 @@ yesBtn.addEventListener("click", () => {
     noBtn.style.display = "none";
 
     const msg = document.createElement("h2");
-    msg.innerText = "Get Well Soon ❤️";
+    msg.innerText = "Get Well Soon Pooja❤️";
     msg.style.marginTop = "20px";
     document.querySelector(".main-container").appendChild(msg);
 });
